@@ -1,0 +1,39 @@
+<!-- Logout Section -->
+ <div class="category-header">
+    <h2>Categories</h2>
+    <button (click)="handleLogout()" class="confirmLogout()">Logout</button>
+ </div>
+
+<!-- Form Section -->
+<section class="form-section">
+    <form (ngSubmit)="handleSubmit()" class="category-form">
+        <input type="text" [(ngModel)]="form.title" name="title" required placeholder="New category..."
+            class="form-input" />
+        <button type="submit" class="btn-submit">{{isEditMode ? 'Edit' : 'Add'}}</button>
+        <button type="button" *ngIf="isEditMode" (click)="resetForm()" class="btn-cancel">Cancel</button>
+    </form>
+</section>
+
+<hr />
+
+<!-- Search Section -->
+<section>
+    <input type="text" [(ngModel)]=searchTerm placeholder="Search..." class="search-input" />
+</section>
+
+<hr />
+
+<!-- Category List Section -->
+<section class="category-list">
+    <ul>
+        <li *ngFor="let category of categories | categoryFilter:searchTerm" class="category-item">
+            <span>{{category.title}}</span>
+            <div class="actions">
+                <button (click)="handleEdit(category)" class="btn-edit">Edit</button>
+                <button (click)="handleDelete(category.id)" class="btn-delete">Delete</button>
+            </div>
+        </li>
+    </ul>
+
+    <div *ngIf="(categories |categoryFilter:searchTerm).length === 0" class="no-data">No categories found.</div>
+</section>

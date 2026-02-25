@@ -1,0 +1,121 @@
+/* Category Header (Logout Button) */
+.category-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.category-header .logout-button {
+    background-color: #dc3545 !important;
+    color: #fff !important;
+    padding: 0.5rem 1rem !important;
+    border: none !important;
+    border-radius: 5px !important;
+    cursor: pointer;
+    font-weight: bold !important;
+}
+
+.category-header .logout-button:hover {
+    background-color: #c82333 !important;
+}
+
+/* Form Section */
+.form-section {
+    margin-bottom: 1rem;
+}
+
+.category-form {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.category-form input.form-input {
+    flex: 1;
+    padding: 0.5rem;
+    border: 1px solid #ccc !important;
+    border-radius: 5px !important;
+    outline: none;
+    font-size: 0.95rem;
+}
+
+.category-form .btn-submit {
+    padding: 0.5rem 1rem;
+    background-color: #007bff !important;
+    color: #fff !important;
+    border: none !important;
+    border-radius: 5px !important;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.category-form .btn-submit:hover {
+    background-color: #0056b3 !important;
+}
+
+.category-form .btn-cancel {
+    padding: 0.5rem 1rem;
+    background-color: #6c757d !important;
+    color: #fff !important;
+    border: none !important;
+    border-radius: 5px !important;
+    cursor: pointer;
+}
+
+.search-section {
+    margin-bottom: 1rem;
+}
+
+.search-input {
+    width: 100% !important;
+    padding: 0.5rem !important;
+    border: 1px solid #ddd !important;
+    border-radius: 5px !important;
+    outline: none !important;
+}
+
+/* Category List */
+.category-list ul {
+    list-style-type: none;
+    padding-left: 0;
+    margin-top: 0.5rem;
+}
+
+.category-list .category-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem 0;
+    border-bottom: 1px solid #ddd;
+}
+
+.category-list .actions {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.category-list .actions button {
+    background-color: #ffc107 !important;
+    color: #000 !important;
+    border: none !important;
+    padding: 0.3rem 0.5rem;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 5px !important;
+    font-size: 0.9rem;
+}
+
+.category-list .actions .btn-delete {
+    background-color: #dc3545 !important;
+    color: #fff !important;
+}
+
+.category-list .actions .btn-delete:hover {
+    background-color: #c82333 !important;
+}
+
+.no-data {
+    text-align: center;
+    color: #777;
+    font-style: italic;
+    margin-top: 1rem;
+}
