@@ -50,16 +50,17 @@ This will compile your project and store the build artifacts in the `dist/` dire
 
 ## Development Setup
 
-1. Start backend API: `https://localhost:5211`
+1. Start backend API: 
 
+ `https://localhost:5211`
 
-2. Run Angular UI:
+3. Run Angular UI:
 ```bash
 ng serve
 ```
-##Application will be available at: `http://localhost:4200`
-
-##Production Deployment (IIS)
+## Application will be available at:
+  `http://localhost:4200`
+## Production Deployment (IIS)
 
 1- Build the project:
 ```bash
@@ -69,12 +70,12 @@ ng build
 
 Application successfully tested on IIS.
 
-##Testing
+## Testing
 - Manual testing performed using browser
 - UI and Backend tested together
 - CRUD operations verified
 
-##Project Purpose
+## Project Purpose
 This project was created to practice and demonstrate:
 
 - Angular fundamentals
