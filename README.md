@@ -2,6 +2,9 @@
 
 This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.2.20.
 
+This project demonstrates a real-world Angular application that communicates
+with a backend REST API. It covers common frontend patterns such as
+service-based API calls and component-based architecture.
 ## Development server
 
 To start a local development server, run:
@@ -36,23 +39,48 @@ ng build
 
 This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
 
-## Running unit tests
+## Features
 
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
+- Category CRUD (Create, Read, Update, Delete)
+- API integration using Angular services
+- Communication between UI and backend
+- Development and production environments
+- Manual end-to-end testing
 
+
+## Development Setup
+
+1. Start backend API: `https://localhost:5211`
+
+
+2. Run Angular UI:
 ```bash
-ng test
+ng serve
 ```
+##Application will be available at: `http://localhost:4200`
 
-## Running end-to-end tests
+##Production Deployment (IIS)
 
-For end-to-end (e2e) testing, run:
-
+1- Build the project:
 ```bash
-ng e2e
+ng build
 ```
+2- Deploy the generated dist/ folder to IIS.
 
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
+Application successfully tested on IIS.
+
+##Testing
+- Manual testing performed using browser
+- UI and Backend tested together
+- CRUD operations verified
+
+##Project Purpose
+This project was created to practice and demonstrate:
+
+- Angular fundamentals
+- API communication
+- Real project workflow
+- Deployment using IIS
 
 ## Additional Resources
 
